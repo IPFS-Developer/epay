@@ -11,11 +11,17 @@ const web3Obj = {
     },
     initialize: async function () {
         let torus = new Torus();
-        await torus.init('testing');
+        await torus.init({
+            buildEnv: 'production', // default: production
+            enableLogging: true, // default: false
+            network: {
+                host: 'rinkeby', // default: mainnet
+                chainId: 4, // default: 1
+                networkName: 'Rinkeby Test Network' // default: Main Ethereum Network
+            },
+            showTorusButton: false // default: true
+        });
         await torus.login();
-        if (torus.provider.networkVersion !== '4') {
-            await torus.setProvider('rinkeby');
-        }
         web3Obj.setweb3(torus.provider);
         web3Obj.torus = torus
     },
