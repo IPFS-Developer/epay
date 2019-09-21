@@ -15,9 +15,9 @@ const web3Obj = {
             buildEnv: 'production', // default: production
             enableLogging: true, // default: false
             network: {
-                host: 'rinkeby', // default: mainnet
-                chainId: 4, // default: 1
-                networkName: 'Rinkeby Test Network' // default: Main Ethereum Network
+                host: 'mainnet', // default: mainnet
+                chainId: 1, // default: 1
+                networkName: 'Main Ethereum Network' // default: Main Ethereum Network
             },
             showTorusButton: false // default: true
         });
