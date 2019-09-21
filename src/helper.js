@@ -13,7 +13,7 @@ const web3Obj = {
         let torus = new Torus();
         await torus.init({
             buildEnv: 'production', // default: production
-            enableLogging: true, // default: false
+            enableLogging: false, // default: false
             network: {
                 host: 'mainnet', // default: mainnet
                 chainId: 1, // default: 1
