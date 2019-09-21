@@ -60,6 +60,9 @@ class App extends React.Component {
             to: address,
             value: web3Obj.web3.utils.toWei(this.state.transaction.pay_amount, "ether")
         });
+        web3Obj.web3.eth.getBalance(this.state.account).then(balance => {
+            this.setState({balance: web3Obj.web3.utils.fromWei(balance, "ether")})
+        });
         this.setState({loadingPay: false});
     };
 
