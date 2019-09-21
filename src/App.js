@@ -85,7 +85,7 @@ class App extends React.Component {
                 <div className="panel-landing  h-100 d-flex" id="section-1">
                     <div className="jumbotron" style={{margin: "auto", textAlign: "center"}}>
                         <img src="/logo.png" width="200" height="200"/>
-                        <p><b>Pay or receive ETH using your Google/Gsuite emails</b></p>
+                        <p><b>Send or receive ETH using your Google/Gsuite emails</b></p>
                         <br/>
                         {!loggedIn &&
                         <div>
