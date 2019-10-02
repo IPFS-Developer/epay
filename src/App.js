@@ -111,7 +111,8 @@ class App extends React.Component {
                             </div>
                             <br/>
                             <div>
-                                <Button variant="primary btn" onClick={this.sendPayment} loading={this.state.loadingPay}>Send ETH</Button>
+                                <Button variant="primary btn" onClick={this.sendPayment}
+                                        loading={this.state.loadingPay}>Send ETH</Button>
                             </div>
                         </div>
                         }
