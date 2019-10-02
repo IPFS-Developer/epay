@@ -1,3 +1,3 @@
 ## EPay
 
-Pay or receive ETH using your Google/Gsuite emails
+Send or receive ETH using your Google/Gsuite emails
